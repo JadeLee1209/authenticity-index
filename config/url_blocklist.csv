@@ -1,0 +1,7 @@
+ticker,url_prefix,reason
+AVGO,broadcom.com/company/legal,legal licensing page reached as fallback - not an About/values page
+NKE,about.nike.com/en/impact-resources,press release reached as fallback
+PSX,phillips66.com/about/sert-technology,technology product page reached as fallback
+COP,conocophillips.com/who-we-are/our-company/Pages/spirit-magazine,company magazine reached as fallback
+ABT,abbott.com/about-abbott/abbott-citizenship,CSR reporting pages - would inflate community/environment themes
+NKE,about.nike.com/en/company/people,executive biography pages reached as fallback

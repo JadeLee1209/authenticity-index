@@ -1,0 +1,51 @@
+ticker,company_name,sector,sec_ticker,predecessor_ciks,domain,alt_domains,seed_urls,notes
+MSFT,Microsoft,Technology,MSFT,,microsoft.com,,microsoft.com/en-us/about;microsoft.com/en-us/about/values;microsoft.com/en-us/about/company,
+AAPL,Apple,Technology,AAPL,,apple.com,,apple.com/about/;apple.com/job/,Apple has no conventional About page; expect a documented gap or a substitute page
+NVDA,NVIDIA,Technology,NVDA,,nvidia.com,,nvidia.com/en-us/about-nvidia/;nvidia.com/page/companyinfo.html,
+GOOGL,Alphabet,Technology,GOOGL,,google.com,about.google;abc.xyz,google.com/about/philosophy.html;about.google/philosophy/;google.com/about/;about.google/,Ten Things philosophy page moved from google.com to about.google ~2019 (redirect chain)
+META,Meta Platforms,Technology,META,,fb.com,facebook.com;about.fb.com;meta.com;about.meta.com,newsroom.fb.com/company-info/;about.fb.com/company-info/;about.meta.com/company-info/;about.facebook.com/company-info/,Newsroom moved newsroom.fb.com -> about.fb.com (2019) -> about.meta.com (2022)
+AVGO,Broadcom,Technology,AVGO,1649338,broadcom.com,,broadcom.com/company/about-us;broadcom.com/company/about-us/,Pre-2018 proxies filed by Broadcom Ltd (predecessor CIK - verify)
+CRM,Salesforce,Technology,CRM,,salesforce.com,,salesforce.com/company/about-us/;salesforce.com/company/our-story/;salesforce.com/company/values/,
+ORCL,Oracle,Technology,ORCL,,oracle.com,,oracle.com/corporate/;oracle.com/corporate/index.html,
+IBM,IBM,Technology,IBM,,ibm.com,,ibm.com/ibm/values/us/;ibm.com/about;ibm.com/ibm/us/en/,
+INTC,Intel,Technology,INTC,,intel.com,,intel.com/content/www/us/en/company-overview/company-overview.html;intel.com/content/www/us/en/company-overview/our-values.html,
+BRK.B,Berkshire Hathaway,Financials,BRK-B,,berkshirehathaway.com,,berkshirehathaway.com/;berkshirehathaway.com/ownman.pdf,Site is a single static homepage; Owner's Manual is a PDF - document as structural gap
+JPM,JPMorgan Chase,Financials,JPM,,jpmorganchase.com,,jpmorganchase.com/corporate/About-JPMC/about-us.htm;jpmorganchase.com/about;jpmorganchase.com/about/our-business/business-principles;jpmorganchase.com/corporate/About-JPMC/jpmorgan-business-principles.htm,
+BAC,Bank of America,Financials,BAC,,bankofamerica.com,about.bankofamerica.com,about.bankofamerica.com/en-us/our-story/our-values.html;about.bankofamerica.com/en-us/who-we-are/our-story.html;about.bankofamerica.com/en/our-company,
+WFC,Wells Fargo,Financials,WFC,,wellsfargo.com,,wellsfargo.com/about/corporate/vision-and-values/;wellsfargo.com/about/corporate/vision-and-values/index;wellsfargo.com/about/,Key validity case: 2016 sales-practices scandal
+GS,Goldman Sachs,Financials,GS,,goldmansachs.com,,goldmansachs.com/who-we-are/business-standards/business-principles/;goldmansachs.com/our-firm/;goldmansachs.com/about-us/,
+MS,Morgan Stanley,Financials,MS,,morganstanley.com,,morganstanley.com/about-us;morganstanley.com/about-us/our-values;morganstanley.com/what-we-do/,
+BLK,BlackRock,Financials,BLK,1364742,blackrock.com,,blackrock.com/corporate/about-us/mission-and-principles;blackrock.com/corporate/about-us,SEC ticker map points to the 2024 holding company (new CIK); 2016-2024 proxies are under BlackRock Inc. CIK 1364742 - verify
+SCHW,Charles Schwab,Financials,SCHW,,schwab.com,aboutschwab.com,aboutschwab.com/;aboutschwab.com/about-us;aboutschwab.com/our-purpose,
+AXP,American Express,Financials,AXP,,americanexpress.com,about.americanexpress.com,about.americanexpress.com/our-company;americanexpress.com/us/content/company/;about.americanexpress.com/,
+C,Citigroup,Financials,C,,citigroup.com,citi.com,citigroup.com/citi/about/;citigroup.com/citi/about/mission-and-value-proposition.html;citigroup.com/global/about-us,
+LLY,Eli Lilly,Healthcare,LLY,,lilly.com,,lilly.com/who-we-are/about-lilly;lilly.com/about-lilly;lilly.com/who-we-are,
+UNH,UnitedHealth Group,Healthcare,UNH,,unitedhealthgroup.com,,unitedhealthgroup.com/who-we-are/our-mission-values.html;unitedhealthgroup.com/about.aspx;unitedhealthgroup.com/About/CultureValues.aspx,
+JNJ,Johnson & Johnson,Healthcare,JNJ,,jnj.com,,jnj.com/credo;jnj.com/about-jnj/jnj-credo;jnj.com/about-jnj,Our Credo is a long-stable values statement - useful low-change benchmark
+ABBV,AbbVie,Healthcare,ABBV,,abbvie.com,,abbvie.com/our-company.html;abbvie.com/who-we-are.html;abbvie.com/who-we-are/our-principles.html,
+MRK,Merck,Healthcare,MRK,,merck.com,,merck.com/about/;merck.com/company-overview/;merck.com/about/our-values/,
+TMO,Thermo Fisher Scientific,Healthcare,TMO,,thermofisher.com,corporate.thermofisher.com,thermofisher.com/us/en/home/about-us.html;corporate.thermofisher.com/en/about-us.html;corporate.thermofisher.com/us/en/index/about.html,
+ABT,Abbott Laboratories,Healthcare,ABT,,abbott.com,,abbott.com/about-abbott.html;abbott.com/about-abbott/mission-and-values.html,
+PFE,Pfizer,Healthcare,PFE,,pfizer.com,,pfizer.com/about;pfizer.com/about/purpose;pfizer.com/about/culture,
+MDT,Medtronic,Healthcare,MDT,,medtronic.com,,medtronic.com/us-en/about/mission.html;medtronic.com/us-en/about.html,Mission statement unchanged since 1960 - low-change benchmark
+BMY,Bristol-Myers Squibb,Healthcare,BMY,,bms.com,,bms.com/about-us.html;bms.com/about-us/our-company.html;bms.com/about-us/our-company/mission-and-values.html,
+AMZN,Amazon,Consumer Discretionary,AMZN,,amazon.com,aboutamazon.com;amazon.jobs,aboutamazon.com/about-us;aboutamazon.com/our-company;amazon.jobs/en/principles,aboutamazon.com launched ~2017; Leadership Principles page is a candidate substitute
+TSLA,Tesla,Consumer Discretionary,TSLA,,tesla.com,,tesla.com/about;tesla.com/about/,Likely JS-rendered; expect thin captures
+HD,Home Depot,Consumer Discretionary,HD,,homedepot.com,corporate.homedepot.com,corporate.homedepot.com/about;corporate.homedepot.com/about/values;corporate.homedepot.com/aboutus/values,
+MCD,McDonald's,Consumer Discretionary,MCD,,mcdonalds.com,corporate.mcdonalds.com,corporate.mcdonalds.com/corpmcd/about-us.html;corporate.mcdonalds.com/corpmcd/our-company/who-we-are.html;mcdonalds.com/us/en-us/about-us.html,
+NKE,Nike,Consumer Discretionary,NKE,,nike.com,about.nike.com,about.nike.com/;about.nike.com/en/company;purpose.nike.com/,Likely JS-rendered
+SBUX,Starbucks,Consumer Discretionary,SBUX,,starbucks.com,,starbucks.com/about-us/company-information/mission-statement;starbucks.com/about-us,Mission statement rewritten 2020/2023 - good change case
+TGT,Target,Consumer Discretionary,TGT,,target.com,corporate.target.com,corporate.target.com/about;corporate.target.com/about/purpose-history;corporate.target.com/about/mission-values,
+LOW,Lowe's,Consumer Discretionary,LOW,,lowes.com,corporate.lowes.com,corporate.lowes.com/our-company;corporate.lowes.com/who-we-are;lowes.com/l/about/,
+TJX,TJX Companies,Consumer Discretionary,TJX,,tjx.com,,tjx.com/company;tjx.com/company/index.html;tjx.com/about,
+F,Ford Motor,Consumer Discretionary,F,,ford.com,corporate.ford.com,corporate.ford.com/company.html;corporate.ford.com/about.html;corporate.ford.com/company/,
+XOM,ExxonMobil,Energy,XOM,34088,exxonmobil.com,corporate.exxonmobil.com,corporate.exxonmobil.com/About-us;exxonmobil.com/en/company/about-us;corporate.exxonmobil.com/en/company/about-us,SEC ticker map points to a new CIK; historical proxies are under Exxon Mobil Corp CIK 34088 - verify
+CVX,Chevron,Energy,CVX,,chevron.com,,chevron.com/about/the-chevron-way;chevron.com/about;chevron.com/who-we-are,The Chevron Way - explicit values statement
+COP,ConocoPhillips,Energy,COP,,conocophillips.com,,conocophillips.com/about-us/;conocophillips.com/about-us/our-spirit-values/;conocophillips.com/who-we-are/,
+EOG,EOG Resources,Energy,EOG,,eogresources.com,,eogresources.com/company/;eogresources.com/about-us/;eogresources.com/company/index.html,
+SLB,SLB (Schlumberger),Energy,SLB,,slb.com,,slb.com/about;slb.com/who-we-are;slb.com/about/who-we-are,Rebranded Schlumberger -> SLB Oct 2022
+MPC,Marathon Petroleum,Energy,MPC,,marathonpetroleum.com,,marathonpetroleum.com/About/;marathonpetroleum.com/About/Our-Values/,
+PSX,Phillips 66,Energy,PSX,,phillips66.com,,phillips66.com/about;phillips66.com/about/our-values;phillips66.com/who-we-are,
+VLO,Valero Energy,Energy,VLO,,valero.com,,valero.com/about;valero.com/en-us/AboutValero;valero.com/about/our-values,
+OXY,Occidental Petroleum,Energy,OXY,,oxy.com,,oxy.com/about;oxy.com/AboutOxy/Pages/default.aspx;oxy.com/about/mission-values,
+HAL,Halliburton,Energy,HAL,,halliburton.com,,halliburton.com/en/about-us;halliburton.com/en-US/about-us/default.html;halliburton.com/en/about-us/our-values,

@@ -1,0 +1,6 @@
+variant,n,spearman_firm_year,spearman_firm_mean
+disclosure_only,390,0.873,0.849
+pay_only,390,0.528,0.575
+sector_peers,390,0.933,0.922
+lag_1,345,0.557,0.966
+no_imputation,384,1.0,1.0

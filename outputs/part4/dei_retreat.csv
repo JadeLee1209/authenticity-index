@@ -1,0 +1,28 @@
+ticker,sector,stated_peak_year,stated_first_decline,lived_peak_year,lived_first_decline,retreat_pattern
+ABBV,Healthcare,2022,,2023,,no_retreat
+AMZN,Consumer Discretionary,2022,,2021,,no_retreat
+AXP,Financials,2019,2023.0,2023,2024.0,talk_first
+BAC,Financials,2017,2021.0,2017,2024.0,talk_first
+BLK,Financials,2018,2019.0,2023,2024.0,talk_first
+BMY,Healthcare,2023,2024.0,2022,2024.0,simultaneous
+CRM,Technology,2020,,2019,,no_retreat
+CVX,Energy,2016,,2018,2019.0,walk_first
+F,Consumer Discretionary,2021,2022.0,2020,,talk_first
+GS,Financials,2019,2021.0,2024,,talk_first
+HAL,Energy,2021,2024.0,2023,,talk_first
+IBM,Technology,2018,2019.0,2019,2021.0,talk_first
+INTC,Technology,2016,2020.0,2021,2022.0,talk_first
+JNJ,Healthcare,2017,,2022,2023.0,walk_first
+JPM,Financials,2020,2024.0,2020,2023.0,walk_first
+META,Technology,2021,2023.0,2020,2022.0,walk_first
+MPC,Energy,2020,2024.0,2023,2024.0,simultaneous
+MRK,Healthcare,2024,,2024,,no_retreat
+MSFT,Technology,2019,2023.0,2023,,talk_first
+NKE,Consumer Discretionary,2018,,2023,,no_retreat
+ORCL,Technology,2022,2023.0,2023,,talk_first
+PFE,Healthcare,2016,2017.0,2022,2023.0,talk_first
+SBUX,Consumer Discretionary,2016,2020.0,2023,2024.0,talk_first
+SLB,Energy,2022,,2024,,no_retreat
+TGT,Consumer Discretionary,2021,2022.0,2024,,talk_first
+UNH,Healthcare,2024,,2023,2024.0,walk_first
+WFC,Financials,2018,2020.0,2022,2023.0,talk_first

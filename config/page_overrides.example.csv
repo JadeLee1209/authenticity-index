@@ -1,0 +1,5 @@
+ticker,url
+# Copy to config/page_overrides.csv after reviewing data/interim/part1/page_selection.csv.
+# One line per firm whose automatic pick was wrong; the URL gets a +100 score and becomes primary.
+# Example (format only):
+# JNJ,jnj.com/credo

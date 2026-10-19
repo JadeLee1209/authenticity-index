@@ -1,0 +1,71 @@
+# External events used in Part 2 (event-aligned shifts) and Part 3 (known-groups validity).
+# Dates are from public record; VERIFY before citing in the write-up.
+#
+# Timing convention: a proxy statement filed in calendar year Y mostly describes fiscal year Y-1,
+# so an event in mid-year E first shows up in proxies filed in E+1 ("first_proxy_year").
+
+market_events:
+  - id: brt_purpose_2019
+    date: 2019-08-19
+    first_proxy_year: 2020
+    themes: [purpose_mission, community_society, employees_people, customer_focus]
+    description: Business Roundtable "Statement on the Purpose of a Corporation" (stakeholder capitalism).
+  - id: floyd_2020
+    date: 2020-05-25
+    first_proxy_year: 2021
+    themes: [diversity_inclusion]
+    description: Murder of George Floyd and the wave of corporate racial-equity commitments.
+  - id: sec_human_capital_2020
+    date: 2020-11-09
+    first_proxy_year: 2021
+    themes: [employees_people, diversity_inclusion]
+    description: SEC Reg S-K modernization requiring human-capital disclosure (10-K, but spills into proxies).
+  - id: covid_2020
+    date: 2020-03-11
+    first_proxy_year: 2021
+    themes: [health_safety, employees_people, community_society]
+    description: WHO declares COVID-19 a pandemic.
+  - id: climate_pressure_2021
+    date: 2021-05-26
+    first_proxy_year: 2022
+    themes: [environment_climate]
+    description: Engine No. 1 wins ExxonMobil board seats; same day Chevron shareholders back Scope 3 proposal; Dutch court Shell ruling.
+  - id: sffa_backlash_2023
+    date: 2023-06-29
+    first_proxy_year: 2024
+    themes: [diversity_inclusion]
+    description: Supreme Court SFFA v. Harvard decision; start of organized anti-DEI pressure on corporations.
+  - id: anti_esg_2023
+    date: 2023-01-01
+    first_proxy_year: 2024
+    themes: [environment_climate, diversity_inclusion]
+    description: State-level anti-ESG legislation and asset-manager pullback (e.g. Climate Action 100+ exits early 2024).
+
+# Firm-specific events for known-groups validity in Part 3. Expectation = the theme on which the
+# firm's say-do backing should be LOW (or drop) in the listed years if the index is valid.
+firm_events:
+  - ticker: WFC
+    years: [2016, 2017, 2018]
+    themes: [integrity_ethics, customer_focus]
+    expectation: low
+    description: Sales-practices (fake accounts) scandal, Sept 2016; Fed asset cap Feb 2018.
+  - ticker: META
+    years: [2018, 2019]
+    themes: [integrity_ethics, customer_focus]
+    expectation: low
+    description: Cambridge Analytica revelations (Mar 2018); FTC $5bn privacy settlement (Jul 2019).
+  - ticker: JNJ
+    years: [2018, 2019, 2020]
+    themes: [health_safety, integrity_ethics]
+    expectation: low
+    description: Talc litigation and Reuters reporting (Dec 2018); opioid litigation.
+  - ticker: XOM
+    years: [2020, 2021, 2022]
+    themes: [environment_climate]
+    expectation: low
+    description: Persistent investor climate dissent culminating in 2021 Engine No. 1 proxy fight.
+  - ticker: BLK
+    years: [2020, 2021, 2022]
+    themes: [environment_climate, purpose_mission]
+    expectation: high
+    description: Placebo-direction case - very public sustainability positioning paired with stewardship disclosures; expected HIGH backing on climate in proxy.

@@ -1,0 +1,7 @@
+model,n,n_firms,coef,se,t,own_lag_coef,std_effect
+A: talk -> walk (d_backing[t+1] ~ d_salience[t]),3504,47,0.0056,0.0046,1.21,-0.4381,0.018
+B: walk -> talk (d_salience[t+1] ~ d_backing[t]),3504,47,-0.0135,0.0451,-0.3,-0.1767,-0.004
+A [hot-button themes only],584,47,0.0285,0.0097,2.95,-0.4404,0.089
+B [hot-button themes only],584,47,0.1502,0.1246,1.2,-0.1384,0.047
+A [other themes],2920,47,0.0019,0.0053,0.36,-0.4381,0.006
+B [other themes],2920,47,-0.0393,0.045,-0.87,-0.1821,-0.012

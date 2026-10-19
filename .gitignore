@@ -1,0 +1,13 @@
+# secrets
+.env
+# local environment / IDE
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+# downloads and caches (several GB; re-created by the pipeline)
+data/
+# internal working notes
+PROJECT_NOTES.md
+run_log*.txt

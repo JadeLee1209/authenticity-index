@@ -1,0 +1,10 @@
+ticker,theme,years,expectation,stated_salience,backing_event,backing_sector_peers,backing_own_other_years,met_vs_peers,met_vs_own_history,description
+WFC,integrity_ethics,2016-2018,low,2.33,0.54,0.388,0.522,False,False,"Sales-practices (fake accounts) scandal, Sept 2016; Fed asset cap Feb 2018."
+WFC,customer_focus,2016-2018,low,3.0,0.713,0.384,0.54,False,False,"Sales-practices (fake accounts) scandal, Sept 2016; Fed asset cap Feb 2018."
+META,integrity_ethics,2018-2019,low,0.0,0.342,0.265,0.355,False,True,Cambridge Analytica revelations (Mar 2018); FTC $5bn privacy settlement (Jul 2019).
+META,customer_focus,2018-2019,low,1.0,0.701,0.282,0.266,False,False,Cambridge Analytica revelations (Mar 2018); FTC $5bn privacy settlement (Jul 2019).
+JNJ,health_safety,2018-2020,low,2.0,0.544,0.293,0.409,False,False,Talc litigation and Reuters reporting (Dec 2018); opioid litigation.
+JNJ,integrity_ethics,2018-2020,low,2.0,0.556,0.329,0.554,False,False,Talc litigation and Reuters reporting (Dec 2018); opioid litigation.
+XOM,environment_climate,2020-2022,low,1.67,0.694,0.534,0.641,False,False,Persistent investor climate dissent culminating in 2021 Engine No. 1 proxy fight.
+BLK,environment_climate,2020-2022,high,0.0,0.376,0.338,0.215,True,True,Placebo-direction case - very public sustainability positioning paired with stewardship disclosures; expected HIGH backing on climate in proxy.
+BLK,purpose_mission,2020-2022,high,2.67,0.24,0.337,0.215,False,True,Placebo-direction case - very public sustainability positioning paired with stewardship disclosures; expected HIGH backing on climate in proxy.

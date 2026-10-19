@@ -1,0 +1,249 @@
+# Shared value/theme taxonomy used in ALL parts (stated values, lived values, index).
+#
+# Why one shared taxonomy?  Part 3 compares what a firm SAYS (About pages) with what it
+# DOES/DISCLOSES (proxy statements). That comparison is only meaningful if both texts are
+# coded on the same dimensions, so the taxonomy is defined once here.
+#
+# How the categories were chosen (justification, see part1_stated_values/README.md):
+#   * Corporate-values content: the "Big Nine" values most frequently cited by large US firms
+#     (Sull, Turconi & Sull 2020, MIT Sloan Mgmt Review "Culture 500") and the values coded by
+#     Guiso, Sapienza & Zingales (2015, JFE) - integrity, customer, innovation, performance,
+#     respect/collaboration, diversity.
+#   * Stakeholder/ESG content: stakeholder theory (Freeman 1984) and the 2019 Business Roundtable
+#     "Statement on the Purpose of a Corporation" list customers, employees, suppliers,
+#     communities and shareholders; ESG reporting adds environment, safety and governance.
+#   * Merged where categories were not separable in pilot reading (e.g. respect + teamwork),
+#     split where they move independently over time (DEI vs. general employee themes - DEI
+#     language rose sharply after 2020 and retreated after 2023, the general employee theme did not).
+#
+# Each theme has:
+#   label        human readable name
+#   definition   what counts (given verbatim to the LLM)
+#   keywords     regexes (case-insensitive, word-boundary-wrapped) used for
+#                (a) classical dictionary measures, (b) passage retrieval in Part 2,
+#                (c) the offline/mock baseline. Phrases chosen to avoid obvious false
+#                positives in BOTH corpora, e.g. "environmental" not "environment"
+#                ("business environment"), "racial/pay equity" not "equity" (equity awards,
+#                shareholders' equity), "our purpose" not "purpose" ("for the purpose of"),
+#                no "pipeline" (oil pipelines vs. drug pipelines).
+#   proxy_evidence  what "lived" evidence for the theme looks like in a proxy statement.
+
+themes:
+  integrity_ethics:
+    label: Integrity & ethics
+    definition: Honesty, ethics, integrity, doing the right thing, transparency, accountability, compliance, trust.
+    keywords:
+      - 'integrity'
+      - 'ethic(s|al|ally)'
+      - 'honest(y)?'
+      - 'transparen(t|cy)'
+      - 'accountab(le|ility)'
+      - 'do(ing)? the right thing'
+      - 'trusted'
+      - 'trustworthy'
+      - 'earn(ing)? (the )?trust'
+      - 'compliance'
+      - 'code of conduct'
+      - 'misconduct'
+      - 'whistleblow\w*'
+    proxy_evidence: Clawback policies tied to misconduct, compliance/risk metrics in pay, ethics oversight by a board committee, disclosed conduct remediation.
+
+  customer_focus:
+    label: Customer focus
+    definition: Serving customers, clients or patients; customer satisfaction, experience, obsession, putting clients first.
+    keywords:
+      - 'customers?'
+      - 'clients?'
+      - 'consumers?'
+      - 'patients?'
+      - 'customer (satisfaction|experience|service)'
+      - 'client first'
+      - 'customer obsess\w*'
+      - 'net promoter'
+      - 'NPS'
+    proxy_evidence: Customer-satisfaction / NPS / quality metrics in incentive pay; client-related board oversight.
+
+  innovation:
+    label: Innovation & technology
+    definition: Innovation, invention, R&D, technology leadership, creativity, pioneering, digital transformation.
+    keywords:
+      - 'innovat\w*'
+      - 'invent\w*'
+      - 'research and development'
+      - 'R&D'
+      - 'breakthrough\w*'
+      - 'pioneer\w*'
+      - 'cutting[- ]edge'
+      - 'creativ\w*'
+      - 'discover(y|ies)'
+    proxy_evidence: R&D / pipeline / product-launch milestones in pay; technology committee oversight.
+
+  performance_excellence:
+    label: Performance & excellence
+    definition: Results, execution, operational excellence, quality, efficiency, growth, winning, financial strength and returns.
+    keywords:
+      - 'excellence'
+      - 'high[- ]performance'
+      - 'results'
+      - 'execution'
+      - 'operational excellence'
+      - 'quality'
+      - 'efficien(t|cy)'
+      - 'growth'
+      - 'win(ning)?'
+      - 'total shareholder return'
+      - 'TSR'
+      - 'return on (equity|capital)'
+    proxy_evidence: Financial/operational metrics in pay (always present - interpreted relative to peers).
+
+  employees_people:
+    label: Employees & talent
+    definition: Employees, talent, people development, careers, wellbeing, benefits, culture as a workplace, engagement.
+    keywords:
+      - 'employees?'
+      - 'our people'
+      - 'talent'
+      - 'workforce'
+      - 'team members?'
+      - 'career(s)?'
+      - 'professional development'
+      - 'employee engagement'
+      - 'well[- ]?being'
+      - 'human capital'
+      - 'culture'
+      - 'training'
+    proxy_evidence: Human-capital / engagement / retention metrics in pay; HR or human-capital committee oversight; quantified workforce disclosures.
+
+  diversity_inclusion:
+    label: Diversity, equity & inclusion
+    definition: Diversity, equity, inclusion, belonging, representation of women and minorities, equal opportunity, pay equity.
+    keywords:
+      - 'diversity'
+      - 'diverse'
+      - 'inclusi(on|ve)'
+      - '(racial|pay|health|gender) equity'
+      - 'equity and inclusion'
+      - 'belonging'
+      - 'DEI'
+      - 'D&I'
+      - 'underrepresented'
+      - 'women'
+      - 'gender'
+      - 'racial'
+      - 'ethnic(ity)?'
+      - 'minorit(y|ies)'
+      - 'pay equity'
+      - 'equal opportunit\w*'
+    proxy_evidence: DEI metrics in pay; board diversity disclosure (matrix, targets); representation data; DEI oversight.
+
+  environment_climate:
+    label: Environment & climate
+    definition: Environmental stewardship, climate change, emissions, sustainability of the planet, energy transition, renewables, water, waste.
+    keywords:
+      - 'environmental\w*'
+      - 'climate'
+      - 'emissions?'
+      - 'greenhouse gas'
+      - 'GHG'
+      - 'carbon'
+      - 'net[- ]zero'
+      - 'renewable\w*'
+      - 'energy transition'
+      - 'sustainab\w*'
+      - 'planet'
+      - 'water (use|stewardship)'
+      - 'waste'
+      - 'biodiversity'
+      - 'methane'
+      - 'flaring'
+      - 'TCFD'
+    proxy_evidence: Emissions / climate metrics in pay; climate oversight by board; quantified targets.
+
+  community_society:
+    label: Community & social impact
+    definition: Communities, society, philanthropy, social impact, giving back, volunteering, economic opportunity, access, human rights.
+    keywords:
+      - 'communit(y|ies)'
+      - 'societ(y|al)'
+      - 'philanthrop\w*'
+      - 'giv(e|ing) back'
+      - 'volunteer\w*'
+      - 'social impact'
+      - 'charit\w*'
+      - 'human rights'
+      - 'economic opportunit\w*'
+      - 'access to (care|medicines|credit)'
+    proxy_evidence: Community / access / supplier-diversity metrics in pay; public-policy or social-responsibility committee; quantified giving.
+
+  health_safety:
+    label: Health & safety
+    definition: Safety of employees, contractors, customers and products; health, process safety, zero harm, product quality and patient safety.
+    keywords:
+      - 'safety'
+      - 'safe(ly)?'
+      - 'injur(y|ies)'
+      - 'incident rate'
+      - 'TRIR'
+      - 'recordable'
+      - 'process safety'
+      - 'zero harm'
+      - 'fatalit(y|ies)'
+      - 'health and safety'
+      - 'HSE'
+      - 'product quality'
+      - 'patient safety'
+    proxy_evidence: Safety metrics (TRIR, process-safety events) in pay; HSE committee oversight.
+
+  collaboration_respect:
+    label: Collaboration & respect
+    definition: Teamwork, collaboration, respect, treating others with dignity, partnership, one team, humility.
+    keywords:
+      - 'collaborat\w*'
+      - 'teamwork'
+      - 'team work'
+      - 'one team'
+      - 'respect(ful)?'
+      - 'dignity'
+      - 'partnership\w*'
+      - 'humility'
+      - 'care for each other'
+    proxy_evidence: Rarely visible in proxies; qualitative leadership/culture assessments in individual pay determinations.
+
+  governance_shareholders:
+    label: Governance & long-term ownership
+    definition: Shareholders/owners, long-term value creation, stewardship, fiduciary duty, prudent risk management, governance, capital discipline.
+    keywords:
+      - 'shareholders?'
+      - 'stockholders?'
+      - 'owners?'
+      - 'long[- ]term value'
+      - 'stewardship'
+      - 'fiduciar\w*'
+      - 'risk management'
+      - 'governance'
+      - 'capital (discipline|allocation)'
+      - 'prudent\w*'
+    proxy_evidence: Always present in proxies; strength judged by shareholder-rights provisions, risk metrics, ownership guidelines relative to peers.
+
+  purpose_mission:
+    label: Purpose & societal mission
+    definition: An explicit higher purpose or mission beyond profit - improving lives, making the world better, empowering people, advancing human progress.
+    keywords:
+      - '(our|corporate|higher|shared) purpose'
+      - 'purpose[- ]driven'
+      - 'mission'
+      - 'improv(e|ing) (the )?lives'
+      - 'make the world'
+      - 'better world'
+      - 'empower\w*'
+      - 'human progress'
+      - 'change the world'
+      - 'make a difference'
+    proxy_evidence: Purpose-linked metrics or explicit linkage of pay strategy to purpose; board oversight of purpose/culture.
+
+# Salience scale used by the LLM in Part 1 (stated values)
+salience_scale:
+  0: absent
+  1: mentioned in passing
+  2: clearly present / one of several emphasized values
+  3: central - headline value or repeatedly emphasized
